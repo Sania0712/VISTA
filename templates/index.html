@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VISTA - AI Chatbot</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="vista-container">
+    <h1>VISTA - VOICE INTEGRATED SMART AI</h1>
+    <div class="chat-window" id="chat-box"></div>
+
+    <div class="controls">
+      <input type="text" id="user-input" placeholder="Type your command...">
+      <button onclick="sendMessage()" class="send-btn"><i class="fas fa-paper-plane"></i> Send</button>
+      <button onclick="startListening()" class="speak-btn"><i class="fas fa-microphone"></i> Speak</button>
+    </div>
+
+    <div class="features">
+      <button onclick="toggleVoice()">Toggle Voice</button>
+      <button onclick="toggleTheme()">Toggle Theme</button>
+      <button onclick="exportCode()">Export Code</button>
+      <button onclick="clearChat()">Clear</button>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

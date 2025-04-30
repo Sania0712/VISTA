@@ -1,0 +1,3 @@
+echo "Flask" > requirements.txt
+echo "openai" >> requirements.txt
+echo "wikipedia" >> requirements.txt

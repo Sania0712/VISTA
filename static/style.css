@@ -1,0 +1,91 @@
+body {
+  background: linear-gradient(160deg, #000428, #004e92);
+  font-family: 'Orbitron', sans-serif;
+  color: #00ffe7;
+  margin: 0;
+  padding: 0;
+}
+
+.vista-container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 2px solid #00ffe7;
+  border-radius: 15px;
+  box-shadow: 0 0 25px #00ffe7;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #0ff;
+  text-shadow: 0 0 10px #0ff;
+}
+
+.chat-window {
+  height: 450px;
+  overflow-y: auto;
+  background-color: #111;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.user-message {
+  color: #00ff9d;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+.bot-message {
+  color: #ff61e6;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+.controls, .features {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #222;
+  color: #0f0;
+  outline: none;
+  box-shadow: 0 0 10px #0ff;
+}
+
+button {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+  transition: 0.3s;
+  box-shadow: 0 0 10px #00ffe7;
+}
+
+.send-btn {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+}
+
+.speak-btn {
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: white;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00ffe7;
+}
